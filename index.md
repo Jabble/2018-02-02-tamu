@@ -13,7 +13,7 @@ enddate: 2018-03-13        # machine-readable end date for the workshop in YYYY-
 instructor: ["Noushin Ghaffari","Anna Dabrowski","Ramalingam Saravanan"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["David Bapst","Jian Tao","Michael Dickens"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["Noushin.Ghaffari@ag.tamu.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes: ["http://pad.software-carpentry.org/2018-02-01-tamu"]            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+collaborative_notes: ["http://pad.software-carpentry.org/2017-03-12-tamu"]            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -225,35 +225,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p id="collaborative_notes">
   We will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
 </p>
-{% endif %}
-
-<hr/>
-
-{% comment %}
-  SYLLABUS
-
-  Show what topics will be covered.
-
-  1. If your workshop is R rather than Python, remove the comment
-     around that section and put a comment around the Python section.
-  2. Some workshops will delete SQL.
-  3. Please make sure the list of topics is synchronized with what you
-     intend to teach.
-  4. You may need to move the div's with class="col-md-6" around inside
-     the div's with class="row" to balance the multi-column layout.
-
-  This is one of the places where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
-{% endcomment %}
-<h2 id="syllabus">Syllabus</h2>
-
-{% if page.carpentry == "swc" %}
-  {% include sc/syllabus.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/syllabus.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/syllabus.html %}
 {% endif %}
 
 <hr/>
@@ -487,3 +458,32 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     </div>
   </div>
 </div> {% comment %} End of 'R' section. {% endcomment %}
+
+<hr/>
+
+{% comment %}
+  SYLLABUS
+
+  Show what topics will be covered.
+
+  1. If your workshop is R rather than Python, remove the comment
+     around that section and put a comment around the Python section.
+  2. Some workshops will delete SQL.
+  3. Please make sure the list of topics is synchronized with what you
+     intend to teach.
+  4. You may need to move the div's with class="col-md-6" around inside
+     the div's with class="row" to balance the multi-column layout.
+
+  This is one of the places where people frequently make mistakes, so
+  please preview your site before committing, and make sure to run
+  'tools/check' as well.
+{% endcomment %}
+<h2 id="syllabus">Syllabus</h2>
+
+{% if page.carpentry == "swc" %}
+  {% include sc/syllabus.html %}
+{% elsif page.carpentry == "dc" %}
+  {% include dc/syllabus.html %}
+{% elsif page.carpentry == "lc" %}
+  {% include lc/syllabus.html %}
+{% endif %}
