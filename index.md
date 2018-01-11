@@ -503,7 +503,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       <p>
         The <a href="{{site.swc_installer}}">
           {% if page.carpentry == "swc" %}
-          Software Carpentry
+<!--           Software Carpentry
           {% elsif page.carpentry == "dc" %}
           Data Carpentry
           {% elsif page.carpentry == "lc" %}
@@ -606,3 +606,4 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   </ol>
 </div>
 {% endcomment %}
+ -->
