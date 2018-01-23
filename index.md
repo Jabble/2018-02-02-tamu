@@ -109,6 +109,16 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% endif %}
 
 {% comment %}
+  REGISTRATION
+
+  This block displays a link to the registration page.
+{% endcomment %}
+<p id="reg">
+  <strong>Registration:</strong> <a href="https://secure.touchnet.com/C21490_ustores/web/classic/product_detail.jsp?PRODUCTID=9617">Aggie Marketplace</a>
+</p>
+
+
+{% comment %}
   SPECIAL REQUIREMENTS
 
   Modify the block below if there are any special requirements.
